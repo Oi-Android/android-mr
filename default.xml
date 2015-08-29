@@ -19,7 +19,7 @@
            revision="refs/heads/cm-12.1" />
   
    <remote name="Oi-Android"
-          fetch="https://github.com/Oi-Android/" />
+          fetch=".." />
 
   <default
            revision="refs/heads/mkl-mr1"
