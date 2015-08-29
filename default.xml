@@ -596,4 +596,5 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/mk" name="MoKee/android_vendor_mk" />
   <project path="vendor/mksdk" name="MoKee/mk_platform_sdk" />
+  <project path="device/xiaomi/ferrari" name="Oi-Android/android_device_xiaomi_ferrari" remote="github" revision="cm-12.1" />
 </manifest>
