@@ -8,6 +8,10 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+           
+    <remote  name="github"
+           fetch=".."
+           review="review.cyanogenmod.org" />
 
   <remote  name="mokee"
            fetch=".."
