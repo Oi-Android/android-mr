@@ -36,7 +36,7 @@
     <copyfile src="build-script" dest="mk" />
   </project>
 
-  <project path="android" name="Oi-Android/android" remote="Oi-Android" revision="mkl-mr1" />
+  <project path="android" name="Oi-Android/android-mr" remote="Oi-Android" revision="mkl-mr1" />
 
   <project path="abi/cpp" remote="third" name="ThirdProject/android_abi_cpp" groups="pdk" />
   <project path="art" name="MoKee/android_art" groups="pdk" />
