@@ -265,7 +265,7 @@
   <project path="external/mksh" remote="third" name="ThirdProject/android_external_mksh" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/mokee/BuildController" name="MoKee/android_external_mokee_BuildController" />
+  <project path="external/mokee/BuildController" name="Oi-Android/android_external_mokee_BuildController" remote="Oi-Android" revision="mkl-mr1" />
   <project path="external/mokee/MoKeeHelper" name="MoKee/android_external_mokee_MoKeeHelper" />
   <project path="external/mokee/MoKeeSDKs" name="MoKee/android_external_mokee_MoKeeSDKs" />
   <project path="external/mokee/ServerController" name="MoKee/android_external_mokee_ServerController" revision="refs/heads/master" />
@@ -601,7 +601,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/mk" name="MoKee/android_vendor_mk" />
+  <project path="vendor/mk" name="Oi-Android/android_vendor_mk" remote="Oi-Android" revision="mkl-mr1" />
   <project path="vendor/mksdk" name="MoKee/mk_platform_sdk" />
   
 </manifest>
