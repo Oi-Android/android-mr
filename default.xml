@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r13" />
+           revision="refs/tags/android-5.1.1_r18" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -313,7 +313,7 @@
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" />
   <project path="external/sepolicy" name="MoKee/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp" />
-  <project path="external/skia" remote="third" name="ThirdProject/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/skia" name="MoKee/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" remote="aosp" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/sonivox" remote="third" name="ThirdProject/android_external_sonivox" groups="pdk" />
@@ -391,6 +391,7 @@
   <project path="hardware/broadcom/libbt" remote="third" name="ThirdProject/android_hardware_broadcom_libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" remote="third" name="ThirdProject/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" remote="third" name="ThirdProject/android_hardware_cm" />
+  <project path="hardware/mokee" name="MoKee/android_hardware_mokee" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="aosp" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" remote="aosp" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" remote="aosp" />
@@ -581,7 +582,7 @@
   <project path="system/media" remote="third" name="ThirdProject/android_system_media" groups="pdk" />
   <project path="system/netd" remote="third" name="ThirdProject/android_system_netd" groups="pdk" />
   <project path="system/qcom" remote="third" name="ThirdProject/android_system_qcom" groups="qcom" />
-  <project path="system/security" remote="third" name="ThirdProject/android_system_security" groups="pdk" />
+  <project path="system/security" name="MoKee/android_system_security" groups="pdk" />
   <project path="system/vold" remote="third" name="ThirdProject/android_system_vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" />
