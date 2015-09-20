@@ -41,7 +41,7 @@
   <project path="abi/cpp" remote="third" name="ThirdProject/android_abi_cpp" groups="pdk" />
   <project path="art" name="MoKee/android_art" groups="pdk" />
   <project path="bionic" name="MoKee/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="MoKee/android_bootable_recovery" groups="pdk" />
+  <project path="bootable/recovery" name="Oi-Android/android_bootable_recovery" groups="pdk" remote="Oi-Android" revision="android-5.1" />
   <project path="cts" remote="third" name="ThirdProject/android_cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
