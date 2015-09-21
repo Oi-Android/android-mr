@@ -23,7 +23,7 @@
            
    <remote  name="Oi-Android"
            fetch=".."
-           revision="refs/heads/mkl-mr1" />
+           revision="refs/heads/mkl-mr1.1" />
 
   <default
            revision="refs/heads/mkl-mr1"
