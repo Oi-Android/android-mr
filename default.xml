@@ -8,22 +8,22 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
-           
-    <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
 
   <remote  name="mokee"
            fetch=".."
            review="review.mfunz.com" />
+           
+  <remote  name="github"
+           fetch=".." />
 
   <remote  name="third"
            fetch=".."
            review="review.mfunz.com"
            revision="refs/heads/cm-12.1" />
-  
-   <remote name="Oi-Android"
-          fetch=".." />
+           
+   <remote  name="Oi-Android"
+           fetch=".."
+           revision="refs/heads/mkl-mr1" />
 
   <default
            revision="refs/heads/mkl-mr1"
@@ -31,17 +31,17 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="Oi-Android/android_build-1" groups="pdk,tradefed" remote="Oi-Android" revision="mkl-mr1" >
+  <project path="build" name="Oi-Android/android_build-mr" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build-script" dest="mk" />
   </project>
 
-  <project path="android" name="Oi-Android/android-mr" remote="Oi-Android" revision="mkl-mr1" />
+  <project path="android" name="Oi-Android/android-mr" />
 
   <project path="abi/cpp" remote="third" name="ThirdProject/android_abi_cpp" groups="pdk" />
   <project path="art" name="MoKee/android_art" groups="pdk" />
   <project path="bionic" name="MoKee/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="Oi-Android/android_bootable_recovery" groups="pdk" remote="Oi-Android" revision="android-5.1" />
+  <project path="bootable/recovery" name="Oi-Android/bootable_recovery-mr" />
   <project path="cts" remote="third" name="ThirdProject/android_cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
@@ -265,7 +265,7 @@
   <project path="external/mksh" remote="third" name="ThirdProject/android_external_mksh" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/mokee/BuildController" name="Oi-Android/android_external_mokee_BuildController" remote="Oi-Android" revision="mkl-mr1" />
+  <project path="external/mokee/BuildController" name="MoKee/android_external_mokee_BuildController" />
   <project path="external/mokee/MoKeeHelper" name="MoKee/android_external_mokee_MoKeeHelper" />
   <project path="external/mokee/MoKeeSDKs" name="MoKee/android_external_mokee_MoKeeSDKs" />
   <project path="external/mokee/ServerController" name="MoKee/android_external_mokee_ServerController" revision="refs/heads/master" />
@@ -311,7 +311,7 @@
   <project path="external/rsync" remote="third" name="ThirdProject/android_external_rsync" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" remote="aosp" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" />
-  <project path="external/sepolicy" name="MoKee/android_external_sepolicy" groups="pdk" />
+  <project path="external/sepolicy" name="Oi-Android/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp" />
   <project path="external/skia" name="MoKee/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" remote="aosp" />
@@ -550,11 +550,10 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" remote="aosp" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="third" name="ThirdProject/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/sabermod-aarch64-linux-android-4.9" name="MoKee/android_prebuilts_gcc_linux-x86_aarch64_sabermod-aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-eabi-4.9" name="MoKee/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.9" />
-  <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-androideabi-4.8" name="MoKee/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" />
+  <project path="prebuilts/gcc/linux-x86/arm/uber-arm-eabi-4.8" name="MoKee/android_prebuilts_gcc_linux-x86_arm_uber-arm-eabi-4.8" />
+  <project path="prebuilts/gcc/linux-x86/arm/uber-arm-linux-androideabi-4.8" name="MoKee/android_prebuilts_gcc_linux-x86_arm_uber-arm-linux-androideabi-4.8" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" remote="aosp" />
@@ -596,7 +595,6 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/mk" name="Oi-Android/android_vendor_mk" remote="Oi-Android" revision="mkl-mr1" />
+  <project path="vendor/mk" name="MoKee/android_vendor_mk" />
   <project path="vendor/mksdk" name="MoKee/mk_platform_sdk" />
-  
 </manifest>
