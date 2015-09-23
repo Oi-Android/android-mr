@@ -41,7 +41,7 @@
   <project path="abi/cpp" remote="third" name="ThirdProject/android_abi_cpp" groups="pdk" />
   <project path="art" name="MoKee/android_art" groups="pdk" />
   <project path="bionic" name="MoKee/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="Oi-Android/bootable_recovery-mr" />
+  <project path="bootable/recovery" name="MoKee/android_bootable_recovery" groups="pdk" />
   <project path="cts" remote="third" name="ThirdProject/android_cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
@@ -311,7 +311,7 @@
   <project path="external/rsync" remote="third" name="ThirdProject/android_external_rsync" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" remote="aosp" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" />
-  <project path="external/sepolicy" name="Oi-Android/android_external_sepolicy" groups="pdk" />
+  <project path="external/sepolicy" name="MoKee/android_external_sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" remote="aosp" />
   <project path="external/skia" name="MoKee/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fw" remote="aosp" />
@@ -595,6 +595,6 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
-  <project path="vendor/mk" name="MoKee/android_vendor_mk" />
+  <project path="vendor/mk" name="Oi-Android/android_vendor_mk" />
   <project path="vendor/mksdk" name="MoKee/mk_platform_sdk" />
 </manifest>
