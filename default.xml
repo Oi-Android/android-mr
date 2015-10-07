@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r18" />
+           revision="refs/tags/android-5.1.1_r24" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -221,8 +221,10 @@
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" remote="aosp" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/libncurses" remote="third" name="ThirdProject/android_external_libncurses" />
+  <project path="external/libnetfilter_conntrack" remote="third" name="ThirdProject/android_external_libnetfilter_conntrack" />
   <project path="external/libnfc-nci" remote="third" name="ThirdProject/android_external_libnfc-nci" groups="pdk" />
   <project path="external/libnfc-nxp" remote="third" name="ThirdProject/android_external_libnfc-nxp" groups="pdk" />
+  <project path="external/libnfnetlink" remote="third" name="ThirdProject/android_external_libnfnetlink" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" remote="aosp" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" remote="aosp" />
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" remote="aosp" />
@@ -383,7 +385,7 @@
   <project path="frameworks/opt/vcard" remote="third" name="ThirdProject/android_frameworks_opt_vcard" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" remote="aosp" />
   <project path="frameworks/rs" remote="third" name="ThirdProject/android_frameworks_rs" groups="pdk" />
-  <project path="frameworks/support" remote="third" name="ThirdProject/android_frameworks_support" />
+  <project path="frameworks/support" name="MoKee/android_frameworks_support" />
   <project path="frameworks/volley" remote="third" name="ThirdProject/android_frameworks_volley" />
   <project path="frameworks/webview" name="MoKee/android_frameworks_webview" />
   <project path="frameworks/wilhelm" remote="third" name="ThirdProject/android_frameworks_wilhelm" />
